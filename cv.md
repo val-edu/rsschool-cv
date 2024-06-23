@@ -26,6 +26,7 @@ alert( result );
 
 ## __Experience__
 - Symfony
+- Laravel
 
 ## __Education__ 
 - __Courses:__
