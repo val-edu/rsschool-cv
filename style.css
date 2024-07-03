@@ -1,3 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
-  background-color: aqua;
+  font-family: "Noto Sans", sans-serif;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+q {
+  quotes: "«" "»";
+  color: #744ce6;
+}
+
+.header-content {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.avatar-wrapper {
+  max-width: 200px;
+}
+
+.avatar-wrapper img {
+  border-radius: 100%;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.main-content h2 {
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 100%;
+}
+
+.main-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content ul li {
+  padding-left: 10px;
+}
+
+.main-content ul li::before {
+  content: url("assets/img/list-item-bullet.svg");
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.code-block {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.code-block code {
+  font-family: "Monaco", monospace;
+  font-size: 14px;
+  color: #333;
+}
+
+.code-block code .keyword {
+  color: #006;
+  font-weight: bold;
+}
+
+.code-block:hover {
+  background-color: #e0e0e0;
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-content img {
+  height: 40px;
 }
