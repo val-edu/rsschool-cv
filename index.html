@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Test</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <div class="avatar-wrapper">
+          <img src="assets/img/avatar.jpg" alt="Аватар" />
+        </div>
+
+        <div>
+          <h1>Valeriy Molotov</h1>
+          <p><q>Учиться, учиться и учиться</q> <cite>В.И. Ленин</cite></p>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="main-content">
+          <h2>About me</h2>
+          <p>
+            I’m a PHP developer. Sometimes I have to solve problems on the
+            frontend.
+          </p>
+
+          <h2>Experience</h2>
+          <ul>
+            <li>Symfony</li>
+            <li>Laravel</li>
+          </ul>
+
+          <h2>Education</h2>
+          <ul>
+            <li>
+              Courses
+              <ul>
+                <li><a href="https://htmlacademy.ru">HTML Academy</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS/SASS</li>
+            <li>JavaScript (Basic)</li>
+            <li>Git</li>
+            <li>PHP</li>
+          </ul>
+
+          <h2>Code example</h2>
+          <div class="code-block">
+            <code>
+              <span class="keyword">function</span> multiply(a, b){<br />
+              &nbsp;&nbsp;<span class="keyword">return</span> a * b<br />
+              }<br />
+              <br />
+
+              let result = multiply(1, 2);<br />
+              <span class="keyword">alert</span>( result );<br />
+            </code>
+          </div>
+
+          <h2>English</h2>
+          <p><b>A1</b> (read documentation)</p>
+
+          <h2>Contacts</h2>
+          <p><b>Location:</b> Moscow, Russia</p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <a href="https://github.com/val-edu">
+            <img src="assets/img/github-mark.svg" alt="GitHub logo" />
+          </a>
+
+          <span>2024</span>
+
+          <a href="https://rs.school/courses/javascript-preschool-ru">
+            <img src="assets/img/rs-logo.svg" alt="RS school Logo" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
